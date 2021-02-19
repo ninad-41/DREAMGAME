@@ -9,7 +9,7 @@ var color;
 
 function setup() {
 
-    canvas = createCanvas(1515, 655);
+    canvas = createCanvas(displayWidth-20,displayHeight-170);
     canvas.mousePressed(startPath);
     canvas.mouseReleased(endPath);
 
@@ -22,9 +22,9 @@ function setup() {
     var buttton2  =createButton("APPLY");
     buttton2.hide();
     
-    input.position(1300,60);
-    Button1.position(1250,20);
-    buttton2.position(1400,100);
+    input.position(displayWidth/2+500, displayHeight/13);
+    Button1.position(displayWidth/2+470, displayHeight/30);
+    buttton2.position(displayWidth/2+600, displayHeight/8);
 
     Button1.mousePressed(function(){
          input.show();
@@ -42,7 +42,7 @@ function setup() {
     })
 
     var colorButton  = createButton("color");
-    colorButton.position(1400,20);
+    colorButton.position(displayWidth/2+600, displayHeight/30);
     colorButton.mousePressed(function(){
         var green = createButton("Green");
         var blue = createButton("Blue");
@@ -54,16 +54,15 @@ function setup() {
         var white = createButton("White");
         var orange = createButton("Orange");
 
-        green.position(1400,50);
-        blue.position(1400,70);
-        red.position(1400,90);
-        yellow.position(1400,110);
-        purple.position(1400,130);
-        pink.position(1400,150);
-        brown.position(1400,170);
-        white.position(1400,190);
-        orange.position(1400,210);   
-        
+        green.position(displayWidth/2+600, displayHeight/30+40);
+        blue.position(displayWidth/2+600, displayHeight/30+60);
+        red.position(displayWidth/2+600, displayHeight/30+80);
+        yellow.position(displayWidth/2+600, displayHeight/30+100);
+        purple.position(displayWidth/2+600, displayHeight/30+120);
+        pink.position(displayWidth/2+600, displayHeight/30+140);
+        brown.position(displayWidth/2+600, displayHeight/30+160);
+        white.position(displayWidth/2+600, displayHeight/30+180);
+        orange.position(displayWidth/2+600, displayHeight/30+200);   
 
     green.mousePressed(function(){
         green.hide();
